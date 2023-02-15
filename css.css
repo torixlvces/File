@@ -1,0 +1,131 @@
+*{
+	box-sizing: border-box;
+}
+
+.nav_menu{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	background-color: white;
+}
+.nav_menu li{
+	float: Left;
+	width: 150px;
+	text-align: center;
+}
+.nav_menu li a{
+	display: block;
+	padding: 20px 15px;
+	text-decoration: none;
+
+}
+
+.nav_menu li a.active{
+	background-color: Gainsboro;
+	color: black;
+}
+
+.nav_menu li a:hover:not(.active){
+	background-color: Gainsboro;
+	color: DimGray;
+}
+
+.header{
+	font-size: 50px;
+	background: url(https://i.pinimg.com/564x/24/67/f4/2467f453fbcb6cd241f68444029567c8.jpg);
+	background-size: cover;
+	height: 150px;
+	color: white;
+	padding: 40px;
+	font-family: Constantia;
+}
+.footer{
+	font-size: 15px;
+	background: url(https://i.pinimg.com/564x/ad/a2/73/ada273a5163f2917cf9287bb716186e0.jpg);
+	background-size: cover;
+	color: white;
+	font-family: Constantia;
+}
+.conatiner::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.menu li{
+	padding: 10px;
+	margin-bottom: 7px;
+	box-shadow: 0 0 10px gray;
+	background: url(https://i.pinimg.com/236x/24/59/e9/2459e9886313ed7d233690f95053bff6.jpg);
+	background-size: cover;
+}
+.menu li a:hover{
+	color: white;
+}
+
+.column {
+  	float: left;
+ 	 width: 33.33%;
+  	padding: 5px;
+  	font-size: 19px;
+  	text-align: center;
+  	font-family: Cambria;
+}
+.nav_menu, nav, section, aside{
+	font-family: Cambria;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: black;
+    text-decoration: none;
+}
+.row::after {
+	 content: "";
+ 	clear: both;
+  display: table;
+}
+
+[class*=col-]{
+	float: left;
+	padding: 20px;
+
+}
+
+/*mobile first*/
+[class*="col-"]{
+	width: 100%;
+}
+
+@media only screen and (min-width: 768px){
+.col-s-1{width: 8.33%}
+.col-s-2{width: 16.66%}
+.col-s-3{width: 25%}
+.col-s-4{width: 33.33%}
+.col-s-5{width: 41.66%}
+.col-s-6{width: 50%}
+.col-s-7{width: 58.33%}
+.col-s-8{width: 66.66%}
+.col-s-9{width: 75%}
+.col-s-10{width: 83.33%}
+.col-s-11{width: 91.66%}
+.col-s-12{width: 100%}
+}
+
+@media only screen and (min-width: 998px){
+.col-1{width: 8.33%}
+.col-2{width: 16.66%}
+.col-3{width: 25%}
+.col-4{width: 33.33%}
+.col-5{width: 41.66%}
+.col-6{width: 50%}
+.col-7{width: 58.33%}
+.col-8{width: 66.66%}
+.col-9{width: 75%}
+.col-10{width: 83.33%}
+.col-11{width: 91.66%}
+.col-12{width: 100%}
+}
